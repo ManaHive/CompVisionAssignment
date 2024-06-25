@@ -6,9 +6,9 @@ import shutil
 # Enter name of item into item_name variable
 # Run script, rename input_dir as needed
 # Images get converted to PNG and indexed
-item_name = "syringe"
-input_dir = f"../{item_name}3/"
-output_dir = f"../processed_images{item_name}_processed/"
+item_name = "mobile_phone"
+input_dir = f"../{item_name}/"
+output_dir = f"../.processed_images/{item_name}_processed/"
 invalid_dir = "invalid/"
 
 # Create output directory if it doesn't exist
