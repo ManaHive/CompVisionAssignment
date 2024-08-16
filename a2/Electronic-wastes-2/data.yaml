@@ -1,0 +1,15 @@
+names:
+- mobile phone
+- pcb
+- syinge
+- syringe
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: electronic-wastes
+  url: https://universe.roboflow.com/imageprocessing-1awq9/electronic-wastes/dataset/2
+  version: 2
+  workspace: imageprocessing-1awq9
+test: C:\Users\User\ImgProcessing\Assignment2\Electronic-wastes-2\test\images
+train: C:\Users\User\ImgProcessing\Assignment2\Electronic-wastes-2\train\images
+val: C:\Users\User\ImgProcessing\Assignment2\Electronic-wastes-2\valid\images
