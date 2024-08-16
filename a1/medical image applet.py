@@ -33,7 +33,7 @@ def predict_image(img):
 
 st.title("Skin Lesion Classifier Applet: Benign or Malignant Tumor?")
 st.write("Here, you can upload images of skin lesions, and using a pretrained classfier model trained on a skin imaging dataset, the applet will segment the image, and predict whether the uploaded image shows a benign or malignant tumor.")
-st.caption("Note: The classifer model used for this applet is K-Nearest Neighbours, and after hyperparameter tuning, achieved a final accuracy rating of 79.40%.") 
+st.caption("Note: The classifer model used for this applet is K-Nearest Neighbours, and after hyperparameter tuning, achieved a final accuracy rating of 79.50%.") 
 st.caption("Please do not use this applet for actual medical diagnosis, it can only make predictions, and cannot be fully relied upon.")
 
 st.divider()
@@ -48,7 +48,8 @@ with col1:
 with col2:
     st.subheader("Model Evaluation")
     st.divider()
-    if result[0] == "benign":
-        st.write("The model predicts that this skin lesion is a **benign** tumor.")
-    elif result[0] == "malignant":
-        st.write("The model predicts that this skin lesion is a **malignant** tumor.")
+    if result is not None:
+        if result[0] == "benign":
+            st.write("The model predicts that this skin lesion is a **benign** tumor.")
+        elif result[0] == "malignant":
+            st.write("The model predicts that this skin lesion is a **malignant** tumor.")
